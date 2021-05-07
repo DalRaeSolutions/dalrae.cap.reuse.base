@@ -1,0 +1,28 @@
+{
+  "requires": {
+    "auth": {
+      "strategy": "mock",
+      "users": {
+        "admin": {
+          "password": "",
+          "roles": ["admin"],
+          "userAttributes": { "customer": "*" }
+        },
+        "customer1": {
+          "password": "",
+          "roles": ["customer"],
+          "userAttributes": {
+            "customer": "fc2888ac-81f8-480a-a4d2-f66276e8aea5"
+          }
+        },
+        "customer2": {
+          "password": "",
+          "roles": ["customer"],
+          "userAttributes": {
+            "customer": "ac2888ac-81f8-480a-a4d2-f66276e8aea5"
+          }
+        }
+      }
+    }
+  }
+}

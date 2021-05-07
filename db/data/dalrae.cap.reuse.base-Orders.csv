@@ -1,0 +1,9 @@
+ID;customer_ID;description;createdAt;createdBy;modifiedAt;modifiedBy
+d8c0c39b-1208-4edb-b725-84f5516c2648;fc2888ac-81f8-480a-a4d2-f66276e8aea5;New order;2021-01-01;admin;2021-01-01;admin
+65571e2f-b644-4949-badd-0b6fb27eb8f2;fc2888ac-81f8-480a-a4d2-f66276e8aea5;Another order 2;2021-01-01;admin;2021-01-01;admin
+53fba18a-8bce-497a-aa4a-7e9b8ccf9b58;fc2888ac-81f8-480a-a4d2-f66276e8aea5;Another order 3;2021-01-01;admin;2021-01-01;admin
+485a13bb-a707-4454-9514-3678ef03a332;fc2888ac-81f8-480a-a4d2-f66276e8aea5;Another order 6;2021-01-01;admin;2021-01-01;admin
+c7feb8e3-c4dc-4e09-a83c-970e6c52da4c;ac2888ac-81f8-480a-a4d2-f66276e8aea5;Another order 9;2021-01-01;admin;2021-01-01;admin
+7ca16581-5a23-4dec-af86-cb9578a7d557;ac2888ac-81f8-480a-a4d2-f66276e8aea5;Bennie forgot something;2021-01-01;admin;2021-01-01;admin
+34aab01f-28b8-4aca-9217-abb9225a7363;ac2888ac-81f8-480a-a4d2-f66276e8aea5;We needed more;2021-01-01;admin;2021-01-01;admin
+6f42fa7a-2e0c-4040-8295-c7476c77ef86;ac2888ac-81f8-480a-a4d2-f66276e8aea5;Stock levels;2021-01-01;admin;2021-01-01;admin
