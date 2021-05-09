@@ -1,25 +1,24 @@
-# Getting Started
+# Base project for CAP reuse PoC
 
-Welcome to your new project.
+This project features
 
-It contains these folders and files, following our recommended project layout:
+- 3 entities: Orders, OrderItems and Customers
+- 2 services: AdminService and CustomerService
+- Security concepts: 
+  - 2 roles with different capabilities
+  - 3 users
+    - admin: has access to the admin service, where it can READ all orders, all order items, and full CRUD on customers
+    - customer1 and customer2: have access to the customer service, but are limited to their own orders
+- Integration tests using Jest and Supertest
+- Swagger UI for both services
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+## How to use
 
+Clone this repository and `npm install`. After that:
 
-## Next Steps
-
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+- `npm run dev` to enter CDS watch mode
+- `npm run debug` to run the app in debug mode for VSCode debugging
+- `npm run start` to run in production mode
+- `npm run test` for a one-off integration test with coverage
+- `npm run test:watch` to run all integration tests in watch mode
+- `npm build:openapi` to create new open api specs. Swagger UI can be accessed through path `/api-docs`
