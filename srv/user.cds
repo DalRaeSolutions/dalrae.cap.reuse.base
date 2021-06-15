@@ -16,4 +16,8 @@ service CustomerService @(path:'/customer', requires: 'authenticated-user') {
   entity Customers @(restrict: [ 
     { grant: 'READ', to: 'customer', where: 'ID like $user.customer' },
   ]) as projection on schema.Customers
+
+  entity Prices @(restrict: [ 
+    { grant: 'READ', to: 'customer' },
+  ]) as projection on schema.Prices
 }

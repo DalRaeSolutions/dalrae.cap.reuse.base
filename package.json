@@ -2,7 +2,7 @@
   "name": "reuse-base",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": "https://github.com/DalRaeSolutions/dalrae.cap.reuse.base",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -12,8 +12,8 @@
     "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
-    "@sap/cds-dk": "^4.0.7",
-    "jest": "^26.6.3",
+    "@sap/cds-dk": "^4.1.5",
+    "jest": "^27.0.4",
     "sqlite3": "^5.0.2",
     "supertest": "^6.1.3"
   },
@@ -23,7 +23,8 @@
     "debug": "node --inspect node_modules/@sap/cds/bin/cds.js run",
     "test": "jest --runInBand --coverage",
     "test:watch": "jest --watchAll --runInBand",
-    "build:openapi": "mkdir -p srv/gen && npx -p @sap/cds-dk cds compile --to openapi srv -s AdminService > srv/gen/admin.json && npx -p @sap/cds-dk cds compile --to openapi srv -s CustomerService > srv/gen/customer.json"
+    "build:openapi": "mkdir -p srv/gen && npx -p @sap/cds-dk cds compile --to openapi srv -s AdminService > srv/gen/admin.json && npx -p @sap/cds-dk cds compile --to openapi srv -s CustomerService > srv/gen/customer.json",
+    "postinstall": "npm run build:openapi"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
