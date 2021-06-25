@@ -1,9 +1,0 @@
-{
-  "trailingComma": "none",
-  "tabWidth": 2,
-  "semi": false,
-  "singleQuote": true,
-  "implicitArrowLinebreak": "off",
-  "maxLen": 9999,
-  "printWidth": 9999
-}

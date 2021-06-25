@@ -8,23 +8,17 @@
   "dependencies": {
     "@sap/cds": "^5",
     "express": "^4",
-    "passport": "^0.4.1",
-    "swagger-ui-express": "^4.1.6"
+    "passport": "^0.4.1"
   },
   "devDependencies": {
     "@sap/cds-dk": "^4.1.5",
-    "jest": "^27.0.4",
-    "sqlite3": "^5.0.2",
-    "supertest": "^6.1.3"
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "cds run --port 4005",
     "dev": "cds watch --port 4005",
-    "debug": "node --inspect node_modules/@sap/cds/bin/cds.js run",
-    "test": "jest --runInBand --coverage",
-    "test:watch": "jest --watchAll --runInBand",
-    "build:openapi": "mkdir -p srv/gen && npx -p @sap/cds-dk cds compile --to openapi srv -s AdminService > srv/gen/admin.json && npx -p @sap/cds-dk cds compile --to openapi srv -s CustomerService > srv/gen/customer.json",
-    "postinstall": "npm run build:openapi"
+    "build": "cds build && mbt build -t ./",
+    "debug": "node --inspect node_modules/@sap/cds/bin/cds.js run"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
